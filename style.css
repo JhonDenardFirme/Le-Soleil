@@ -352,7 +352,7 @@ a{
 
 
 
-@media (max-width: 500px) { 
+@media (max-width: 300px) { 
 
   .hero {
     min-height: 100vh;
@@ -399,13 +399,14 @@ a{
       width: auto;
       height: 300px;
       right: 50vw;
+
   }
 
   .gordon {
       width: auto;
       height: 400px;
       right: 10vw;
-      top: 2rem;
+
   }
 
 
