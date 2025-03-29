@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#">
+            <div class="logo-container">
+                <img src="./images/assets/logo.png" alt="Logo" class="logo">
+                <h4 class="logo-type">LE <span class="accent">SOLEIL</span></h4>
+            </div>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#" class="link">HOME</a></li>
+            <li><a href="./menupage.html" class="link">MENU</a></li>
+            <li><a href="#gallery" class="link">GALLERY</a></li>
+            <li><a href="#about" class="link">ABOUT US</a></li>
+            <li><a href="./reservation.html" class="btn-book">BOOK NOW</a></li>  
+        </ul>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>        
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="container hero">
+
+        <div class="hero-text">
+            <h1 class="banner-logotype">LE <span class="accent">SOLEIL</span></h1>
+            <h3 class="banner-tagline">WHERE FRENCH ELEGANCE MEETS CULINARY BRILLIANCE</h3>
+        </div>
+        <div class="hero-images">
+            <img src="./images/assets/gordon.png" class="gordon" alt="Gordon">
+            <img src="./images/assets/ratatouille.png" class="remy" alt="Remy">
+        </div>
+
+    </section>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const navItems = document.querySelectorAll('.nav-links li a');
+
+        hamburger.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+
+        navItems.forEach(item => {
+            item.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+            });
+        });
+
+    </script>
+
+    <!-- Hero Section -->
+
+
+
+    <!-- MENU Section -->
+    <section class="container menu">
+    
+        <div class="subheader-container">
+            <h3 class="world">OUR WORLD RENOWNED</h3>
+            <h2 class="world1">CHEF'S <span class="accent">SELECTION</span> OF EXCELLENCE</h2>
+        </div>
+
+        <div class="menu-scroller">
+            <div class="scroller-track">
+            <img src="./images/menu/menuimg1.png" alt="Menu item 1">
+            <img src="./images/menu/menuimg2.png" alt="Menu item 2">
+            <img src="./images/menu/menuimg3.png" alt="Menu item 3">
+            <img src="./images/menu/menuimg4.png" alt="Menu item 4">
+            <img src="./images/menu/menuimg1.png" alt="Menu item 1">
+            <img src="./images/menu/menuimg2.png" alt="Menu item 2">
+            <img src="./images/menu/menuimg3.png" alt="Menu item 3">
+            <img src="./images/menu/menuimg4.png" alt="Menu item 4">
+            </div>
+        </div>
+
+        <div class="menu-text">
+            <a href="menupage.html"><p class="text-button">VIEW MENU</p></a>
+        </div>
+    
+
+    </section>
+    <!-- MENU Section -->
+
+
+
+    <!-- MENU Section -->
+    <section class="container gallery">
+        <!-- Subheader (Title + Subtitle) -->
+        <div class="subheader-container">
+          <h3>EXPLORE OUR ATMOSPHERE AND DISHES</h3>
+          <h2>LE <span class="accent">SOLEIL</span> IN FRAMES</h2>
+        </div>
+  
+        <!-- Carousel Container (Arrows + Slides) -->
+        <div class="carousel-container">
+          <!-- Left Arrow -->
+          <button class="carousel-arrow left"></button>
+  
+          <!-- Main Carousel Box holding the slides -->
+          <div class="carousel-box">
+            <!-- 4 Slides -->
+            <div class="slide">
+              <img src="./images/restaurant/Restaurant3.png" alt="Slide 1" />
+            </div>
+            <div class="slide">
+              <img src="./images/restaurant/Restaurant4.png" alt="Slide 2" />
+            </div>
+            <div class="slide">
+              <img
+                src="./images/food/Main Courses/EntrecôteàlaBordelaise.png"
+                alt="Slide 3"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./images/food/Main Courses/RatatouilleProvençale.png"
+                alt="Slide 4"
+              />
+            </div>
+          </div>
+  
+          <!-- Right Arrow -->
+          <button class="carousel-arrow right"></button>
+        </div>
+  
+        <!-- Carousel Dots (Indicators) -->
+        <div class="carousel-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+  
+        <div class="menu-text">
+          <a href="./gallerypage.html"><p class="text-button">VIEW GALLERY</p></a>
+        </div>
+  </div>
+      </section>
+
+      <script>
+        // Select all slides, dots, and arrow buttons
+        const slides = document.querySelectorAll(".slide");
+        const dots = document.querySelectorAll(".dot");
+        const leftArrow = document.querySelector(".carousel-arrow.left");
+        const rightArrow = document.querySelector(".carousel-arrow.right");
+  
+        let currentIndex = 0;
+        const autoPlayInterval = 5000; // 5000ms = 5 seconds
+  
+        // Function to show the slide at a specific index with fade-in effect
+        function showSlide(index) {
+          // Wrap the index around if necessary
+          if (index < 0) index = slides.length - 1;
+          if (index >= slides.length) index = 0;
+  
+          // Remove active class from all slides and dots
+          slides.forEach((slide) => slide.classList.remove("active"));
+          dots.forEach((dot) => dot.classList.remove("active"));
+  
+          // Add active class to the selected slide and corresponding dot
+          slides[index].classList.add("active");
+          dots[index].classList.add("active");
+  
+          currentIndex = index;
+        }
+  
+        // Event listeners for the arrow buttons
+        leftArrow.addEventListener("click", () => {
+          showSlide(currentIndex - 1);
+        });
+        rightArrow.addEventListener("click", () => {
+          showSlide(currentIndex + 1);
+        });
+  
+        dots.forEach((dot, index) => {
+          dot.addEventListener("click", () => {
+            showSlide(index);
+          });
+        });
+  
+        // Initialize by showing the first slide
+        showSlide(currentIndex);
+      </script>
+
+
+
+
+    <!-- ABOUT US Section -->
+    <section class="container container-fluid about-us">
+        <div class="row align-items-center about-container">
+            <div class="col-12 col-md-6 text-center about1">
+                <div class="about-us-text">
+                    <p>A STORY OF PASSION, FLAVOR, AND TRADITION</p>
+                    <h2 class="accent">ABOUT US</h2>
+                    <p>Founded in 2023, Le Soleil was born from a love of French gastronomy. Our head chef, Pierre Laurent, trained in Lyon and Paris, envisioned a restaurant that brings the warmth of French hospitality to every table. Inspired by the bistros of Provence and the fine dining of Paris, Le Soleil offers a harmonious blend of rustic and refined flavors.</p>
+                    <button class="text-button">LEARN MORE</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 about2">
+                <div class="aboutus-image-container">
+                    <img src="./images/restaurant/Restaurant1.png" alt="Le Soleil Restaurant Exterior" class="aboutus-image img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ABOUT US Section -->
+
+
+
+
+
+
+
+    <!-- DINE Section -->
+    <section class="container dine">
+        
+        <div class="dine-container">
+            <a href="./reservation.html">
+                <img src="./images/assets/dinewithus.png" class="dine-img">
+            </a>
+            
+        </div>
+
+        <div class="calltoaction-container">
+            <h3>A TASTE OF PARIS AWAITS</h3>
+            <h2><span class="accent">DINE</span> WITH US</h2>
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER Section -->
+
+    <footer class=" footer">
+        <div class="footer-bg">
+            <img src="./images/assets/footerbg.png" class="footer-img">
+        </div>
+        <div class="footer-logo-container">
+            <div>
+                <img src="./images/assets/logo.png">
+                <h4>LA <span class="accent">SOLEIL</span></h4>
+                <p>WHERE FRENCH ELEGANCE MEETS CULINARY BRILLIANCE.</p>
+            </div>
+
+            <div class="socials">
+                <div class="icon-container">
+                    <div class="icon">
+                        <img class="icon-img">
+                    </div>
+                    <div class="icon">
+                        <img class="icon-img">
+                    </div>
+                    <div class="icon">
+                        <img class="icon-img">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="links-container">
+            <div class="info-links">
+                <h4 class="accent">LINKS</h4>
+                <ul class="links">
+                    <a><li>ADDRESS</li></a>
+                    <a><li>OPERATING HOURS</li></a>
+                    <a><li>OUR CHEFS & STAFF</li></a>
+                    <a><li>RESERVATIONS</li></a>
+                </ul>
+            </div>
+
+            <div class="browse-links">
+                <h4 class="accent">BROWSE</h4>
+                <ul class="links">
+                    <a><li>ADDRESS</li></a>
+                    <a><li>OPERATING HOURS</li></a>
+                    <a><li>OUR CHEFS & STAFF</li></a>
+                    <a><li>RESERVATIONS</li></a>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
+
+<!--
+    Copy this HTML Document
+    All of the sections should be enclosed with
+    <section>
+    Class "container" gives padding (eto default, need ilagay)
+    Class "hero" or your section name will be your layout styling (ikaw na bahala)
+
+
+    When creating sections, use the subheader-container example
+    It will automatically provide the margins and layout. Pwede naman palitan if di applicable yung centered
+    
+    Texts already have styling. Add class "accent" to color it (Refer to the example subheader)
+
+    h1 - For Main Title Only
+    h2 - Yung Malaking Bold Text
+    h3 - Thin font sa taas nun
+
+    h4 - Yung Item Names
+    p - Item Descriptions
+
+    Corner-radius are 16px for consistency
+
+
+    Bali ang ipapasa niyo lang is yung HTML and CSS
+    Then Download our resources, yung images folder sa GDrive
+    Para same tayo ng directory lahat. Sa same level lang sila
+
+    > images
+    > index.html
+    > style.css
+
+    
+    Pwede mo na idelete yung samples sa taas, then isang <section> container lang yung ipapasa
+    Retain lang yung subheader-container, pwede mo gamitin sa loob ng container mo
+    If may inside page ka, separate html document, saka na lang natin ililink kapag kumpleto na
+
+    Also, try to use media queries para marearrange yung layout into mobile version
+    Karaniwan, naka center lang yun or naka flush left yung text
+    Mag share na lang tayo ng code sa gc kapag nagdedevelop na tayo, para marereuse din ng iba yung components if applicable
+
+-->

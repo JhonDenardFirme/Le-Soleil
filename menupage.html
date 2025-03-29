@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=MPkgF0lRbFJMHVGyLxX3uVJEeHRGrLy6D5O2K7EfVFOTF_GMonp1e_sQPsY2YZq_S9REiDn2FiBpEdGAzZTlT9heY3A-Hgbch3Q5fjsFEqfHlSuEHKoEpEdrKKs7tz6CRV3uQHTuBvFAXj_FZC8X27Akvvrush1RFIXg11Nsik4VFxHG5MeO7sz5XydLWEXQwZe4lNKdfRpnTD1zV595o-kSTchLgDFIe7p6j9CbkRuoSNIxpWMWRGIMrQZR-s-dg3knhCI0z4bmxRKZh1efugQrlNMLL6AKmn8BYWyyqxtzhI89wjbRmW1ll_7dVnfgjpAEJfMAvw4ZedyoobNMUYP3zQNyR3dZ8V9OzsAEi0t_pr8D3T3QW33OlROigRz0Ttbqsdo1ATRZn4q6WrDaAKqh_9QojL1Qu9lGEp0Tg1Ip7i1UkbsvkjzzTZ48ve9eVYBqvH6QihKpkIq7sbH0-dB6W7jLdxS8ygMQhrviGnVsIXyRsr5D4LOEE5-TMCgC8lNYVCicrfLFQ1a-fynkwQh-XPxJUMouMVAss3bSaq9OqWLVzo1-XdGzVnVMpn25WM3GdcnJNmB41Sqx3DfIU-6T0hHnwLTjKAyCLn2AtF_NqhrogQLicLvdU1rkMbhpaedZ28SaREe83HUNpUWs2h07DLKecvOCZVomq0Mu9tfDYgjs3eD-8iRp99vYQ2QM" charset="UTF-8"></script></head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="./images/assets/logo.png" alt="Logo" class="logo">
+            <h4 class="logo-type">LE <span class="accent">SOLEIL</span></h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero" class="link">HOME</a></li>
+            <li><a href="./menupage.html" class="link">MENU</a></li>
+            <li><a href="#gallery" class="link">GALLERY</a></li>
+            <li><a href="#about" class="link">ABOUT US</a></li>
+            <li><a href="#book" class="btn-book">BOOK NOW</a></li>  
+        </ul>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>        
+    </nav>
+
+    <section class="container menupage">
+        <h2 class="first-element">APPETIZER</h2>
+        <hr class="horizontal-line">
+        <br>
+        <div class="card-container">
+                <div class="card">
+                    <img src="./images/food/Appetizers/Soupeàl’Oignon.png" alt="Soup" class="card-image">
+                    <div class="card-content">
+                    <h3 class="card-title">Soupe <br> à l’Oignon</h3>
+                    <p class="card-text">Slow-cooked caramelized onions in rich beef broth, topped with melted Gruyère and a baguette.</p>
+                    <button class="card-button modal-btn" data-modal="soupModal">Learn More</button>
+                    </div>
+                </div>
+    
+                    <div class="card">
+                        <img src="./images/food/Appetizers/EscargotsdeBourgogne.png" alt="Snails" class="card-image">
+                        <div class="card-content">
+                        <h3 class="card-title" style="font-size: 15px;">Escargots de Bourgogne</h3>
+                        <p class="card-text">Baked in garlic-parsley butter, served with crusty French bread into the flavorful sauce.</p>
+                        <button class="card-button modal-btn" data-modal="snails">Learn More</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="./images/food/Appetizers/TartaredeSaumon.png" alt="Salmon" class="card-image">
+                        <div class="card-content">
+                        <h3 class="card-title">Tartare <br> de Saumon</h3>
+                        <p class="card-text">Freshly diced salmon with citrus zest, dill, shallots, and Dijon mustard, served on crisp crostini.</p>
+                        <button class="card-button modal-btn" data-modal="salmon">Learn More</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="./images/food/Appetizers/FoieGrasPoêlé.png" alt="Foie" class="card-image">
+                        <div class="card-content">
+                        <h3 class="card-title">Foie Gras<br>  Poêlé</h3>
+                        <p class="card-text"> Luxuriously rich foie gras paired with caramelized apples and a drizzle of balsamic glaze.</p>
+                        <button class="card-button modal-btn" data-modal="foie gras">Learn More</button>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <img src="./images/food/Appetizers/SaladeNiçoise.png" alt="Salad" class="card-image">
+                        <div class="card-content">
+                        <h3 class="card-title">Salade <br> Niçoise</h3>
+                        <p class="card-text"> Seared tuna, olives, green beans, hard-boiled eggs, tomatoes, and anchovies.</p>
+                        <button class="card-button modal-btn" data-modal="Salade Niçoise">Learn More</button>
+                        </div>
+                    </div>
+    
+    
+                    <div class="card">
+                        <img src="./images/food/Appetizers/BrieenCroûte.png" alt="Snails" class="card-image">
+                        <div class="card-content">
+                        <h3 class="card-title">Brie en<br>  Croûte</h3>
+                        <p class="card-text">Warm brie wrapped in flaky puff pastry, served with fig jam and toasted walnuts.</p>
+                        <button class="card-button modal-btn" data-modal="Brie">Learn More</button>
+                        </div>
+                    </div>
+        </div>
+   <br> <br>
+    <h2>MAIN COURSE</h2>
+    <hr class="horizontal-line">
+    <br>
+    <div class="card-container">
+            <div class="card">
+                <img src="./images/food/Main Courses/BoeufBourguignon.png" alt="Boeuf Bourguignon" class="card-image">
+                <div class="card-content">
+                <h3 class="card-title">Boeuf <br>Bourguignon</h3>
+                <p class="card-text">Slow-braised beef in a rich Burgundy wine with pearl onions, mushrooms, and potatoes.</p>
+                <button class="card-button modal-btn" data-modal="Brie">Learn More</button>
+                </div>
+            </div>
+
+                <div class="card">
+                    <img src="./images/food/Main Courses/CoqauVin.png" alt="Coq au Vin" class="card-image">
+                    <div class="card-content">
+                    <h3 class="card-title">Coq <br>au Vin</h3>
+                    <p class="card-text">Braised in Burgundy wine with smoky bacon, mushrooms, and vegetables.</p>
+                    <button class="card-button modal-btn" data-modal="Coq">Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="./images/food/Main Courses/FiletdeSaumonauBeurreBlanc.png" alt="Filet de Saumon au Beurre Blanc" class="card-image">
+                    <div class="card-content">
+                    <h3 class="card-title">Filet de Saumon au Beurre Blanc</h3>
+                    <p class="card-text">Pan-seared salmon with a buttery white wine sauce, with asparagus and potatoes.</p>
+                    <button class="card-button modal-btn" data-modal="Filet">Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="./images/food/Main Courses/MagretdeCanard.png" alt="Magret de Canard" class="card-image">
+                    <div class="card-content">
+                    <h3 class="card-title">Magret <br> de Canard</h3>
+                    <p class="card-text">Seared duck breast glazed with a citrus-orange reduction, paired with potatoes.</p>
+                    <button class="card-button modal-btn" data-modal="Magret">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./images/food/Main Courses/RatatouilleProvençale.png" alt="Ratatouille Provençale" class="card-image">
+                    <div class="card-content">  
+                    <h3 class="card-title">Ratatouille Provençale</h3>
+                    <p class="card-text">Slow-cooked Provençal vegetable medley of zucchini, eggplant, bell peppers, and tomatoes.</p>
+                    <button class="card-button modal-btn" data-modal="Ratatouille">Learn More</button>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img src="./images/food/Main Courses/EntrecôteàlaBordelaise.png" alt="Entrecôte à la Bordelaise" class="card-image">
+                    <div class="card-content">
+                    <h3 class="card-title">Entrecôte à la Bordelaise</h3>
+                    <p class="card-text">Juicy ribeye steak topped with red wine shallot sauce, served with crispy pommes frites.</p>
+                    <button class="card-button modal-btn" data-modal="Entrecôte">Learn More</button>
+                    </div>
+                </div>
+    </div>
+<br> <br>
+    <h2>DESSERT</h2>
+    <hr class="horizontal-line">
+    <br>
+    <div class="card-container">
+
+            <div class="card">
+                <img src="./images/food/Desserts/CrèmeBrûlée.png" alt="Crème Brûlée" class="card-image">
+                <div class="card-content">
+                <h3 class="card-title">Crème <br> Brûlée</h3>
+                <p class="card-text">Classic vanilla bean custard topped with a caramelized sugar crust.</p>
+                <button class="card-button modal-btn" data-modal="Crème">Learn More</button>
+                </div>
+            </div>
+
+                <div class="card">
+                    <img src="./images/food/Desserts/TarteTatin.png" alt="Tarte Tatin" class="card-image">
+                    <div class="card-content">
+                    <h3 class="card-title">Tarte <br> Tatin</h3>
+                    <p class="card-text">A caramelized upside-down apple tart, served with vanilla ice cream.</p>
+                    <button class="card-button modal-btn" data-modal="Tarte">Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="./images/food/Desserts/Mille-Feuille.png" alt="Mille-Feuille" class="card-image">
+                    <div class="card-content">
+                    <h3 class="card-title">Mille<br> Feuille</h3>
+                    <p class="card-text">Layers of crispy puff pastry with delicate pastry cream and powdered sugar.</p>
+                    <button class="card-button modal-btn" data-modal="Mille-Feuille">Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="./images/food/Desserts/MoelleuxauChocolat.png" alt="Moelleux au Chocolat" class="card-image">
+                    <div class="card-content">
+                    <h3 class="card-title" style="font-size: 14px;">Moelleux au <br> Chocolat</h3>
+                    <p class="card-text">A rich and warm chocolate lava cake with a raspberry <br>coulis.</p>
+                    <button class="card-button modal-btn" data-modal="Moelleux">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./images/food/Desserts/ÎleFlottante.png" alt="Île Flottante" class="card-image">
+                    <div class="card-content">
+                    <h3 class="card-title">Île <br> Flottante</h3>
+                    <p class="card-text">A light, poached meringue floating on vanilla custard with a caramel drizzle.</p>
+                    <button class="card-button modal-btn" data-modal="Île">Learn More</button>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img src="./images/food/Desserts/MacaronsAssortis.png" alt="Macarons Assortis" class="card-image">
+                    <div class="card-content">
+                    <h3 class="card-title">Macarons<br>  Assortis</h3>
+                    <p class="card-text"> A selection of delicate French macarons in seasonal <br>  flavors.</p>
+                    <button class="card-button modal-btn" data-modal="Macarons">Learn More</button>
+                    </div>
+                </div>
+    </div>
+<br> <br>
+    <h2>BEVERAGES</h2>
+    <hr class="horizontal-line">
+    <br>
+    <div class="card-container">
+
+            <div class="card">
+                <img src="./images/food/Drinks/KirRoyale.png" alt="Kir Royale " class="card-image">
+                <div class="card-content">
+                <h3 class="card-title">Kir <br> Royale</h3>
+                <p class="card-text">A refined mix of Champagne and blackcurrant <br> liqueur.</p>
+                <button class="card-button modal-btn" data-modal="Kir">Learn More</button>
+                </div>
+            </div>
+
+                <div class="card">
+                    <img src="./images/food/Drinks/ChâteauBordeauxRed.png" alt="Château Bordeaux Red" class="card-image">
+                    <div class="card-content">
+                    <h3 class="card-title">Château <br> Bordeaux Red </h3>
+                    <p class="card-text">A full-bodied French red wine with deep berry flavors and oak undertones.</p>
+                    <button class="card-button modal-btn" data-modal="Château">Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="./images/food/Drinks/CitronPressé.png" alt="Citron Pressé" class="card-image">
+                    <div class="card-content">
+                    <h3 class="card-title">Citron <br> Pressé</h3>
+                    <p class="card-text">Freshly squeezed lemonade with a touch of honey <br> and mint.</p>
+                    <button class="card-button modal-btn" data-modal="Citron">Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="./images/food/Drinks/ChablisBlanc.png" alt="Chablis Blanc" class="card-image">
+                    <div class="card-content">
+                    <h3 class="card-title">Chablis <br> Blanc</h3>
+                    <p class="card-text">A crisp, dry white wine from Burgundy with citrus and mineral notes.</p>
+                    <button class="card-button modal-btn" data-modal="Chablis">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./images/food/Drinks/CaféauLait.png" alt="Café au Lait" class="card-image">
+                    <div class="card-content">
+                    <h3 class="card-title">Café <br> au Lait</h3>
+                    <p class="card-text">A smooth and rich French-style coffee served with <br> steamed milk</p>
+                    <button class="card-button modal-btn" data-modal="Café">Learn More</button>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img src="./images/food/Drinks/TisanedeProvence.png" alt="Tisane de Provence" class="card-image">
+                    <div class="card-content">
+                    <h3 class="card-title">Tisane<br>  de Provence</h3>
+                    <p class="card-text"> A caffeine-free herbal infusion with lavender, thyme, and chamomile</p>
+                    <button class="card-button modal-btn" data-modal="Tisane">Learn More</button>
+                    </div>
+                </div>
+    </div>
+          <!-- ETO YUNG MODAL -->
+            <div class="modal-overlay" id="soupModal">
+                <div class="modal">
+                <button class="modal-close">&times;</button>
+                <div class="modal-body">
+                    <h3>SOUPE À L'OIGNON</h3>
+                    <ul>
+                    <li>Allergens: Dairy, Gluten</li>
+                    <li>Nutritional Information: 250 kcal, 12g fat, 30g carbs, 10g protein</li>
+                    </ul>
+
+                </div>
+            </div>
+            </div>
+
+            <div class="modal-overlay" id="snails">
+                <div class="modal">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-body">
+                        <h3>Escargots de Bourgogne</h3>
+                            <ul>
+                            <li>Allergens: Dairy, Shellfish, Gluten</li>
+                            <li>Nutritional Information: 190 kcal, 15g fat, 2g carbs, 10g protein</li>
+                            </ul>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="modal-overlay" id="snails">
+                <div class="modal">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-body">
+                        <h3>Escargots de Bourgogne</h3>
+                            <ul>
+                            <li>Allergens: Dairy, Shellfish, Gluten</li>
+                            <li>Nutritional Information: 190 kcal, 15g fat, 2g carbs, 10g protein</li>
+                            </ul>
+                    </div>
+                </div>        
+            </div>
+            <div class="modal-overlay" id="salmon">
+                <div class="modal">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-body">
+                        <h3>Tartare de Saumone</h3>
+                            <ul>
+                            <li>Allergens: Fish, Gluten (in crostini)</li>
+                            <li>Nutritional Information: 220 kcal, 14g fat, 4g carbs, 18g protein</li>
+                            </ul>
+                    </div>
+                </div>        
+            </div>
+
+
+            <div class="modal-overlay" id="foie gras">
+                <div class="modal">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-body">
+                        <h3>Foie Gras Poêlé</h3>
+                            <ul>
+                            <li>Allergens: Dairy</li>
+                            <li>Nutritional Information: 320 kcal, 28g fat, 8g carbs, 9g protein</li>
+                            </ul>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="modal-overlay" id="Salade Niçoise">
+                <div class="modal">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-body">
+                        <h3>Salade Niçoise</h3>
+                            <ul>
+                            <li>Allergens: Fish, Eggs</li>
+                            <li>Nutritional Information: 280 kcal, 18g fat, 10g carbs, 22g protein</li>
+                            </ul>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="modal-overlay" id="Brie">
+                <div class="modal">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-body">
+                        <h3>Brie en Croûte</h3>
+                            <ul>
+                            <li>Allergens: Dairy, Gluten, Nuts</li>
+                            <li>Nutritional Information: 350 kcal, 22g fat, 28g carbs, 10g protein</li>
+                            </ul>
+                    </div>
+                </div>        
+            </div>
+
+            <!--Main Course-->
+
+            <div class="modal-overlay" id="Boeuf">
+                <div class="modal">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-body">
+                        <h3>Boeuf Bourguignon</h3>
+                            <ul>
+                            <li>Dairy, Gluten (in sauce thickener)</li>
+                            <li>Nutritional Information: 480 kcal, 25g fat, 35g carbs, 35g protein</li>
+                            </ul>
+                    </div>
+                </div>        
+            </div>
+
+
+            <div class="modal-overlay" id="Coq">
+                <div class="modal">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-body">
+                        <h3>Coq au Vin</h3>
+                            <ul>
+                            <li>Allergens: Dairy, Gluten (in bread)</li>
+                            <li>Nutritional Information: 420 kcal, 18g fat, 25g carbs, 40g protein</li>
+                            </ul>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="modal-overlay" id="Filet">
+                <div class="modal">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-body">
+                        <h3>Filet de Saumon au Beurre Blanc</h3>
+                            <ul>
+                            <li>Allergens: Dairy, Fish</li>
+                            <li>Nutritional Information: 450 kcal, 28g fat, 20g carbs, 35g protein</li>
+                            </ul>
+                    </div>
+                </div>        
+            </div>
+
+
+            <div class="modal-overlay" id="Magret">
+                <div class="modal">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-body">
+                        <h3>Magret de Canard</h3>
+                            <ul>
+                            <li>Allergens: Dairy</li>
+                            <li>Nutritional Information: 520 kcal, 32g fat, 30g carbs, 40g protein</li>
+                            </ul>
+                    </div>
+                </div>        
+            </div>
+
+
+            <div class="modal-overlay" id="Ratatouille">
+                <div class="modal">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-body">
+                        <h3>Ratatouille Provençale (Vegetarian)</h3>
+                            <ul>
+                            <li>Allergens: None</li>
+                            <li>Nutritional Information: 250 kcal, 10g fat, 30g carbs, 5g protein</li>
+                            </ul>
+                    </div>
+                </div>        
+            </div>
+
+
+            <div class="modal-overlay" id="Entrecôte">
+                <div class="modal">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-body">
+                        <h3>Entrecôte à la Bordelaise</h3>
+                            <ul>
+                            <li>Allergens: None</li>
+                            <li>Nutritional Information: 620 kcal, 40g fat, 25g carbs, 50g protein</li>
+                            </ul>
+                    </div>
+                </div>        
+            </div>
+
+            <!--Dessert-->
+
+            <div class="modal-overlay" id="Crème">
+                <div class="modal">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-body">
+                        <h3>Crème Brûléen</h3>
+                            <ul>
+                            <li>Allergens: Dairy, Eggs</li>
+                            <li>Nutritional Information: 320 kcal, 20g fat, 25g carbs, 6g protein</li>
+                            </ul>
+                    </div>
+                </div>        
+            </div>
+
+
+            <div class="modal-overlay" id="Tarte">
+                <div class="modal">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-body">
+                        <h3>Tarte Tatin</h3>
+                            <ul>
+                            <li>Allergens: Dairy, Gluten, Eggs</li>
+                            <li>Nutritional Information: 350 kcal, 15g fat, 45g carbs, 5g protein</li>
+                            </ul>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="modal-overlay" id="Mille-Feuille">
+                <div class="modal">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-body">
+                        <h3>Mille-Feuille</h3>
+                            <ul>
+                            <li>Allergens: Dairy, Gluten, Eggs</li>
+                            <li>Nutritional Information: 400 kcal, 25g fat, 40g carbs, 8g protein</li>
+                            </ul>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="modal-overlay" id="Moelleux">
+                <div class="modal">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-body">
+                        <h3>Moelleux au Chocolat</h3>
+                            <ul>
+                            <li>Allergens: Dairy, Gluten, Eggs</li>
+                            <li>Nutritional Information: 420 kcal, 22g fat, 50g carbs, 8g protein</li>
+                            </ul>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="modal-overlay" id="Île">
+                <div class="modal">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-body">
+                        <h3>Île Flottante</h3>
+                            <ul>
+                            <li>Allergens: Dairy, Eggs</li>
+                            <li>Nutritional Information: 280 kcal, 12g fat, 35g carbs, 7g protein</li>
+                            </ul>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="modal-overlay" id="Macarons">
+                <div class="modal">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-body">
+                        <h3>Macarons Assortis</h3>
+                            <ul>
+                            <li>Allergens: Dairy, Eggs</li>
+                            <li>Nutritional Information: 280 kcal, 12g fat, 35g carbs, 7g protein</li>
+                            </ul>
+                    </div>
+                </div>        
+            </div>
+
+
+            <!--Beverages-->
+
+            <div class="modal-overlay" id="Kir">
+                <div class="modal">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-body">
+                        <h3>Kir Royale</h3>
+                            <ul>
+                            <li>Allergens: Sulfites</li>
+                            <li>Nutritional Information: 125 kcal, 0g fat, 4g carbs, 0g protein</li>
+                            </ul>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="modal-overlay" id="Château">
+                <div class="modal">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-body">
+                        <h3>Château Bordeaux Red</h3>
+                            <ul>
+                            <li>Allergens: Sulfites</li>
+                            <li>Nutritional Information: 125 kcal, 0g fat, 4g carbs, 0g protein</li>
+                            </ul>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="modal-overlay" id="Citron">
+                <div class="modal">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-body">
+                        <h3>Citron Pressé</h3>
+                            <ul>
+                            <li>Allergens: None</li>
+                            <li>Nutritional Information: 90 kcal, 0g fat, 22g carbs, 0g protein</li>
+                            </ul>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="modal-overlay" id="Chablis">
+                <div class="modal">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-body">
+                        <h3>Chablis Blanc </h3>
+                            <ul>
+                            <li>Allergens: Sulfites</li>
+                            <li>Nutritional Information: 120 kcal, 0g fat, 3g carbs, 0g protein</li>
+                            </ul>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="modal-overlay" id="Café">
+                <div class="modal">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-body">
+                        <h3>Café au Lait</h3>
+                            <ul>
+                            <li>Allergens: Dairy</li>
+                            <li>Nutritional Information: 80 kcal, 4g fat, 8g carbs, 2g protein</li>
+                            </ul>
+                    </div>
+                </div>        
+            </div>
+
+            <div class="modal-overlay" id="Tisane">
+                <div class="modal">
+                    <button class="modal-close">&times;</button>
+                    <div class="modal-body">
+                        <h3>Tisane de Provence</h3>
+                            <ul>
+                            <li>Allergens: None</li>
+                            <li>Nutritional Information: 0 kcal, 0g fat, 0g carbs, 0g protein</li>
+                            </ul>
+                    </div>
+                </div>        
+            </div>
+
+
+
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.modal-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const modalId = this.getAttribute('data-modal');
+                    const modal = document.getElementById(modalId);
+                    modal.style.display = 'flex';
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+            document.querySelectorAll('.modal-close').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    this.closest('.modal-overlay').style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                });
+            });
+            document.querySelectorAll('.modal-overlay').forEach(modal => {
+                modal.addEventListener('click', function(e) {
+                    if (e.target === this) {
+                        this.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+            });
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    document.querySelectorAll('.modal-overlay').forEach(modal => {
+                        modal.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                    });
+                }
+            });
+        });
+        </script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+:root {
+    --white: #FFFFFF;
+    --black: #0D0D0D;
+    --primary: #EE6515;
+    --gray: #5A5A5A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", "Arial", sans-serif;
+    color: var(--white);
+}
+
+body{
+    background-color: var(--black);
+}
+
+.about-us{
+    display: grid;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 64px;
+}
+
+.navbar{
+    width: 100%;
+    height: 8vh;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 64px; 
+}
+
+h1{
+    font-size: 8rem;
+    font-family: "Boldonse", "Arial", sans-serif;
+    color: var(--primary);
+}
+
+h2, h2 span{
+    font-size: 3rem;
+    font-family: "Boldonse", "Arial", sans-serif;
+}
+
+h3{
+    font-size: 2rem;
+    font-family: "Jost", "Arial", sans-serif;
+    font-weight: 300;
+    margin-bottom: -1rem;
+}
+
+h4{
+    font-size: 1.4rem;
+    font-family: "Boldonse", "Arial", sans-serif;
+    font-weight: 300;
+}
+
+p{
+    font-size: 1rem;
+    font-family: "Jost", "Arial", sans-serif;
+    font-weight: 300;
+}
+
+.accent{
+    color: var(--primary);
+}
+
+.subheader-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us-details {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 64px;
+}
+
+.background-container {
+    background-image: url('/images/assets/bgpic.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 64px;
+    position: relative;
+    min-height: 500px; 
+}
+
+.background-text {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+    max-width: 70%; 
+}
+
+.about-us-page {
+    padding: 5rem;
+}
+.background-text h1 {
+    margin-bottom: 10px;
+}
+
+.about-us-details-section {
+    margin-bottom: 64px;
+}
+
+.about-us-details-section h3 {
+    color: var(--primary);
+    margin-bottom: 24px;
+}
+
+.about-us-details-section p {
+    line-height: 1.6;
+    padding: 0 24px;
+}
+
+.team-section {
+    margin-top: 64px;
+}
+
+.team-member {
+    background-color: #1A1A1A; 
+    border-radius: 16px;
+    overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; 
+    position: relative;
+    padding-bottom: 0; /* Remove the padding */
+    display: flex;
+    flex-direction: column;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
+}
+
+.team-image {
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 0;
+    display: block; /* Ensure the image is a block element */
+}
+
+.team-member .member-info {
+    color: white;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.team-member .member-info h4 {
+    padding: 16px 0 0 0;
+    margin: 0;
+}
+
+.team-member .member-info p {
+    padding: 8px 0 16px 0;
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF6B00; 
+    padding: 12px 0;
+    width: 100%;
+}
+
+.social-icon {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: rgba(255,255,255,0.7); 
+}
+
+
+@media (max-width: 768px) {
+    .about-us-details {
+        padding: 32px;
+    }
+    
+    .about-us-page {
+        padding: 2rem;
+    }
+    
+    .background-container {
+        border-radius: 32px;
+        min-height: 400px;
+    }
+    
+    .background-text {
+        max-width: 90%;
+    }
+    
+    .team-section .col-6,
+    .team-section .col-md-3 {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 30px;
+    }
+    
+    .team-member {
+        margin-bottom: 20px;
+    }
+    
+    .about-us-details-section p {
+        padding: 0;
+    }
+
+    .fa-grip-lines-vertical {
+        display: none;
+    }
+}
