@@ -75,10 +75,6 @@ a{
     text-decoration: none !important;
 }
 
-
-
-
-
 /*------ NAVBAR & HERO*/
 
 /* NAVBAR */
@@ -485,8 +481,8 @@ hr{
   }
 
   .card {
-    width: 250px;
-    height: 400px;
+    width: 200px;
+    height: 350px;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -497,8 +493,8 @@ hr{
     flex-wrap: wrap;
   }
   .card-button {
-    margin-top: 5px;
-    padding: 8px 16px;
+    margin-top: 3px;
+    padding: 4px 8px;
     background: #EE6515;
     color: white;
     text-decoration: none;
@@ -511,16 +507,20 @@ hr{
     background: #ca5613;
   }
   .card-title {
-    font-size: 15px;
+    font-size: 12px;
     font-family: "Boldonse", "Arial", sans-serif;
-    margin-top: 2px;
+    margin-top: 1px;
     margin-bottom: 2px;
     color: white;
     text-transform: uppercase;
   }
   .card-content {
-    padding: 15px;
+    padding: 10px;
     justify-content: space-between;
+  }
+
+  .card-text{
+    font-size: 10px;
   }
   /* MODAL / POP UP STYLE SYA WHEN LEARN MORE BUTTON IS CLICKED */
 .modal-overlay {
@@ -640,7 +640,7 @@ hr{
     }
     
     @keyframes scrollMenu {
-      100% { transform: translateX(-55%); } /* pang mobile naman to na scroll */
+      100% { transform: translateX(200%); } /* pang mobile naman to na scroll */
     }
   }
 
