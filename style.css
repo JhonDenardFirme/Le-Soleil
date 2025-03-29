@@ -1600,6 +1600,15 @@ ul {
     height: 44px;
     background-color: var(--white);
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
 
 
@@ -1637,6 +1646,12 @@ ul {
     .info-links{
         display: none;
     }
+}
+
+.icon-img{
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
 }
 
 
