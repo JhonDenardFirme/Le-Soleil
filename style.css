@@ -74,16 +74,13 @@ a{
     color: white;
 }
 
-<<<<<<< HEAD
+html {
+  scroll-behavior: smooth;
+}
 
 
 
-
-/*---------- NAVBAR STYLES ----------*/
-
-=======
 /*------ NAVBAR & HERO*/
->>>>>>> 3d68b9f4acf24269c7897ca12a4181af18c5633d
 
 .navbar {
   position: absolute;
