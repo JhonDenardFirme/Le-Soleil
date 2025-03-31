@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Le Soleil - Menu</title>
     <link href="./style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +11,7 @@
 <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=MPkgF0lRbFJMHVGyLxX3uVJEeHRGrLy6D5O2K7EfVFOTF_GMonp1e_sQPsY2YZq_S9REiDn2FiBpEdGAzZTlT9heY3A-Hgbch3Q5fjsFEqfHlSuEHKoEpEdrKKs7tz6CRV3uQHTuBvFAXj_FZC8X27Akvvrush1RFIXg11Nsik4VFxHG5MeO7sz5XydLWEXQwZe4lNKdfRpnTD1zV595o-kSTchLgDFIe7p6j9CbkRuoSNIxpWMWRGIMrQZR-s-dg3knhCI0z4bmxRKZh1efugQrlNMLL6AKmn8BYWyyqxtzhI89wjbRmW1ll_7dVnfgjpAEJfMAvw4ZedyoobNMUYP3zQNyR3dZ8V9OzsAEi0t_pr8D3T3QW33OlROigRz0Ttbqsdo1ATRZn4q6WrDaAKqh_9QojL1Qu9lGEp0Tg1Ip7i1UkbsvkjzzTZ48ve9eVYBqvH6QihKpkIq7sbH0-dB6W7jLdxS8ygMQhrviGnVsIXyRsr5D4LOEE5-TMCgC8lNYVCicrfLFQ1a-fynkwQh-XPxJUMouMVAss3bSaq9OqWLVzo1-XdGzVnVMpn25WM3GdcnJNmB41Sqx3DfIU-6T0hHnwLTjKAyCLn2AtF_NqhrogQLicLvdU1rkMbhpaedZ28SaREe83HUNpUWs2h07DLKecvOCZVomq0Mu9tfDYgjs3eD-8iRp99vYQ2QM" charset="UTF-8"></script></head>
 <body>
 
+    <!----- NAVBAR SECTION ----->
     <nav class="navbar">
         <a href="./index.html">
             <div class="logo-container">
@@ -32,7 +33,11 @@
             <div></div>
         </div>        
     </nav>
+    <!----- NAVBAR SECTION ----->
 
+
+
+    <!----- MENU SECTION ----->
     <section class="container menupage">
         <h2 class="first-element">APPETIZER</h2>
         <hr class="horizontal-line">
@@ -618,9 +623,11 @@
 
     </section>
 
+    <!----- MENU SECTION ----->
+
     
 
-    <!-- FOOTER Section -->
+    <!----- FOOTER SECTION ----->
 
     <footer class=" footer">
         <div class="footer-bg">
@@ -673,7 +680,11 @@
         </div>
     </footer>
 
+    <!----- FOOTER SECTION ----->
 
+
+
+    <!----- SCRIPTS SECTION ----->
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -711,21 +722,23 @@
         });
         </script>
 
-<script>
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    const navItems = document.querySelectorAll('.nav-links li a');
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const navItems = document.querySelectorAll('.nav-links li a');
 
-    hamburger.addEventListener('click', function() {
-        navLinks.classList.toggle('active');
-    });
-
-    navItems.forEach(item => {
-        item.addEventListener('click', function() {
-            navLinks.classList.remove('active');
+        hamburger.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
         });
-    });
 
-</script>
+        navItems.forEach(item => {
+            item.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+            });
+        });
+
+    </script>
+
+    <!----- SCRIPTS SECTION ----->
 </body>
 </html>

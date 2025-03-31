@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Le Soleil In Frames Carousel</title>
+    <title>Le Soleil - Gallery</title>
     <link href="./style.css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,6 +13,7 @@
     <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=EpJTlkDIg7WNqURxIKDp7L4QZfA5sJ4eA0s4svF7KmEohRIoeFtCim3sMWfgprQPOcOIIuAgerklKcid3Z4SGsrbDST8LTAn1utgDoYFahuosiN2XKMfhPKA3Lxgnf3Y5af7nDvlSsOV0-x2L26KRjP6W-NceWwq3esduNkcfo0iIuFqe1V_c_h5fNgStAQY_8gUaeD-ZJryxjGSF0Okv_SJlGwL9V6wKpbll_1HiDG4FhcEevA0NMqaAfzyGdBCtnFwrscVWm98WeFhRcQXGaVhjnosEVeqIv5Q9tvOkHWx5W6jzWLJagD1gdDBfoKhR_zRPXDdYyorHFSl1acI470zSUD9uhRwDtpSXycL_otyjlwg9RJGjZWZ_pt7Q53TEYvEAVByo3OvA44px7Itos0L6QDNxaRBCY4EBEnYZQgWTOXcmo5_bOPIJZxbpG5uzy3Zl5O2RWQYCi2ILu74fWMTjhLiU-QmewcI5H59DPiFpq37IJLnHeFzm7FGgN3bFs6wh1RQ_iMRCFccRQjkNT7Q_1BLdfCtV5xznaI6U6Jw9ikfeLjHuhDBrKxjodKo7UxnHzqQ2tmc5ZUsfQJCbcmfCs_wbpFp63GtXQoe1lWDYzbQdaCjLvPn8FTn7BDKpT6Fg8N0TbdfKVG7PmzMeKEmIm1i9wVqBymVeItgKocnkyPoTvI_QeZFKNCXzl4a" charset="UTF-8"></script></head>
     <body>
     
+      <!----- NAVBAR SECTION ----->
       <nav class="navbar">
         <a href="./index.html">
             <div class="logo-container">
@@ -34,17 +35,18 @@
             <div></div>
         </div>        
     </nav>
+    <!----- NAVBAR SECTION ----->
 
-    <!-- "LE SOLEIL IN FRAMES" Section -->
+    <!----- GALLERY SECTION ----->
 
-      <!-- Carousel Container (Arrows + Slides) -->
+      
       <div class="carousel-container page-carousel">
-        <!-- Left Arrow -->
+       
         <button class="carousel-arrow left"></button>
 
-        <!-- Main Carousel Box holding the slides -->
+        
         <div class="carousel-box">
-          <!-- 4 Slides -->
+         
           <div class="slide">
             <img src="./images/restaurant/Restaurant2.png" alt="Slide 1" />
           </div>
@@ -65,11 +67,11 @@
           </div>
         </div>
 
-        <!-- Right Arrow -->
+        
         <button class="carousel-arrow right"></button>
       </div>
 
-      <!-- Carousel Dots (Indicators) -->
+      
       <div class="carousel-dots dots-page">
         <span class="dot active"></span>
         <span class="dot"></span>
@@ -78,9 +80,11 @@
       </div>
     </section>
 
+    <!----- GALLERY SECTION ----->
+
     
 
-    <!-- FOOTER Section -->
+    <!----- FOOTER SECTION ----->
 
     <footer class=" footer">
       <div class="footer-bg">
@@ -133,90 +137,81 @@
       </div>
   </footer>
 
+  <!----- FOOTER SECTION ----->
+
+
+  
+  <!----- SCRIPTS SECTION ----->
+  
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    const navItems = document.querySelectorAll('.nav-links li a');
+
+    hamburger.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+    });
+
+    navItems.forEach(item => {
+        item.addEventListener('click', function() {
+            navLinks.classList.remove('active');
+        });
+    });
+
+  </script>
+
+
+
+  <script>
+    
+    const slides = document.querySelectorAll(".slide");
+    const dots = document.querySelectorAll(".dot");
+    const leftArrow = document.querySelector(".carousel-arrow.left");
+    const rightArrow = document.querySelector(".carousel-arrow.right");
+
+    let currentIndex = 0;
+    const autoPlayInterval = 5000; 
+
+
+    function showSlide(index) {
+
+      if (index < 0) index = slides.length - 1;
+      if (index >= slides.length) index = 0;
+
+
+      slides.forEach((slide) => slide.classList.remove("active"));
+      dots.forEach((dot) => dot.classList.remove("active"));
+
+
+      slides[index].classList.add("active");
+      dots[index].classList.add("active");
+
+      currentIndex = index;
+    }
+
+
+    leftArrow.addEventListener("click", () => {
+      showSlide(currentIndex - 1);
+    });
+    rightArrow.addEventListener("click", () => {
+      showSlide(currentIndex + 1);
+    });
+
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+        showSlide(index);
+      });
+    });
+
+
+    showSlide(currentIndex);
+  </script>
+
+
 </body>
 </html>
 
-    <script>
-      const hamburger = document.querySelector('.hamburger');
-      const navLinks = document.querySelector('.nav-links');
-      const navItems = document.querySelectorAll('.nav-links li a');
-
-      hamburger.addEventListener('click', function() {
-          navLinks.classList.toggle('active');
-      });
-
-      navItems.forEach(item => {
-          item.addEventListener('click', function() {
-              navLinks.classList.remove('active');
-          });
-      });
-
-  </script>
-  
-
-    <!-- JavaScript for Manual Slide Switching and Auto-play -->
-    <script>
-      // Select all slides, dots, and arrow buttons
-      const slides = document.querySelectorAll(".slide");
-      const dots = document.querySelectorAll(".dot");
-      const leftArrow = document.querySelector(".carousel-arrow.left");
-      const rightArrow = document.querySelector(".carousel-arrow.right");
-
-      let currentIndex = 0;
-      const autoPlayInterval = 5000; // 5000ms = 5 seconds
-
-      // Function to show the slide at a specific index with fade-in effect
-      function showSlide(index) {
-        // Wrap the index around if necessary
-        if (index < 0) index = slides.length - 1;
-        if (index >= slides.length) index = 0;
-
-        // Remove active class from all slides and dots
-        slides.forEach((slide) => slide.classList.remove("active"));
-        dots.forEach((dot) => dot.classList.remove("active"));
-
-        // Add active class to the selected slide and corresponding dot
-        slides[index].classList.add("active");
-        dots[index].classList.add("active");
-
-        currentIndex = index;
-      }
-
-      // Event listeners for the arrow buttons
-      leftArrow.addEventListener("click", () => {
-        showSlide(currentIndex - 1);
-      });
-      rightArrow.addEventListener("click", () => {
-        showSlide(currentIndex + 1);
-      });
-
-      // Event listeners for dot clicks
-      dots.forEach((dot, index) => {
-        dot.addEventListener("click", () => {
-          showSlide(index);
-        });
-      });
-
-      // Initialize by showing the first slide
-      showSlide(currentIndex);
-    </script>
-
-<script>
-  const hamburger = document.querySelector('.hamburger');
-  const navLinks = document.querySelector('.nav-links');
-  const navItems = document.querySelectorAll('.nav-links li a');
-
-  hamburger.addEventListener('click', function() {
-      navLinks.classList.toggle('active');
-  });
-
-  navItems.forEach(item => {
-      item.addEventListener('click', function() {
-          navLinks.classList.remove('active');
-      });
-  });
-
-</script>
   </body>
 </html>
 

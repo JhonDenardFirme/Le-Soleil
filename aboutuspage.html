@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Le Soleil</title>
+    <title>Le Soleil - About Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +12,8 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+
+    <!----- NAVBAR SECTION ----->
     <nav class="navbar">
         <a href="./index.html">
             <div class="logo-container">
@@ -34,23 +36,10 @@
         </div>        
     </nav>
 
-        <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        const navItems = document.querySelectorAll('.nav-links li a');
+    <!----- NAVBAR SECTION ----->
 
-        hamburger.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
-        });
 
-        navItems.forEach(item => {
-            item.addEventListener('click', function() {
-                navLinks.classList.remove('active');
-            });
-        });
-
-    </script>
-
+    <!----- ABOUT US SECTION ----->
     <div class="about-us-page">
 
         
@@ -154,10 +143,11 @@
         </div>
     </div>
 </div>
+<!----- ABOUT US SECTION ----->
 
 
 
-    <!-- FOOTER Section -->
+    <!----- FOOTER SECTION -----> 
 
     <footer class=" footer">
         <div class="footer-bg">
@@ -210,6 +200,11 @@
         </div>
     </footer>
 
+    <!----- FOOTER SECTION -----> 
+
+
+    <!----- SCRIPT SECTION -----> 
+
     <script>
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
@@ -228,5 +223,7 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
 </html>
